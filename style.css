@@ -1,0 +1,29 @@
+/* cleanliness */
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+html {
+    height: 100%;
+}
+
+table, th, td {
+    border: 1px solid black; 
+    border-collapse: collapse;
+    padding: 3px;
+    margin: 3px;
+}
+
+.title {
+    margin: 3px;
+}
+
+.rtable {
+    width: calc(100% - 6px);
+}
+
+.hidden {
+    display: none;
+}

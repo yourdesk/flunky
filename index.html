@@ -2,23 +2,54 @@
 <html>
 
 <head> 
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <title>repl.it</title>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
-    <link href="style.css" rel="stylesheet" type="text/css" />
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@700&display=swap" rel="stylesheet">
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width'>
+    <title>flunky</title>
+    <link rel='stylesheet' href='style.css'>
 </head>
 
 <body>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script>
 
-    <script src="flunky.js"></script>
-    <script src="flunky.ui.js"></script>
+    <!-- begin html -->
+
+    <h1 class='title'>Flunky</h1>
+    
+    <table class='rtable'>
+        <!-- begin row template -->
+    
+        <tr class='hidden template'>
+            <td>
+                <span class='res N'>0</span>
+                <button class='reroll N'>Reroll</button>
+            </td>
+            <td>
+                <input type=text class='name N'>
+            </td>
+            <td>
+                <input type=text class='eq N'>
+            </td>
+        </tr>
+
+        <!-- end row template -->
+
+        <colgroup>
+            <col style='width:10%'>
+            <col style='width:10%'>
+            <col style='width:80%'>
+        </colgroup>
+        <tr>
+            <th>Result</th>
+            <th>Name</th>
+            <th>Dice Equation</th>
+        </tr>
+    </table>
+
+    <!-- end html -->
+
+    <script src='flunky.js'></script>
+    <script src='random.util.js'></script>
+    <script src='flunky.ui.js'></script>
 </body>
 
 </html>

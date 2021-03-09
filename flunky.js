@@ -1,9 +1,9 @@
 const DiceFlags = {
-    None: '.none',
-    TakeHighest: '.takehighest',
-    DropHighest: '.drophighest',
-    TakeLowest: '.takelowest',
-    DropLowest: '.droplowest'
+    None: 0,
+    TakeHighest: 1,
+    DropHighest: 2,
+    TakeLowest: 3,
+    DropLowest: 4
 };
 
 class RNG {
