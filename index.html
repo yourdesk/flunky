@@ -9,13 +9,18 @@
 </head>
 
 <body>
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script>
-
     <!-- begin html -->
 
     <h1 class='title'>Flunky</h1>
+    <button class='add'>add dice</button>
     
     <table class='rtable'>
+        <tr>
+            <th>Result</th>
+            <th>Name</th>
+            <th>Dice Equation</th>
+        </tr>
+
         <!-- begin row template -->
     
         <tr class='hidden template'>
@@ -28,6 +33,7 @@
             </td>
             <td>
                 <input type=text class='eq N'>
+                <button class='save N'>Save Equation</button>
             </td>
         </tr>
 
@@ -38,17 +44,13 @@
             <col style='width:10%'>
             <col style='width:80%'>
         </colgroup>
-        <tr>
-            <th>Result</th>
-            <th>Name</th>
-            <th>Dice Equation</th>
-        </tr>
     </table>
 
     <!-- end html -->
 
     <script src='flunky.js'></script>
     <script src='random.util.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script>
     <script src='flunky.ui.js'></script>
 </body>
 

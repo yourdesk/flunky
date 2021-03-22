@@ -123,11 +123,6 @@ class Dice {
         this.roller = new DiceRoller(dice);
     }
 
-    update(dice) {
-        this.dice = dice;
-        this.roller = new DiceRoller(dice);
-    }
-
     roll(e = true) {
         return this.roller.roll(e = e);
     }
